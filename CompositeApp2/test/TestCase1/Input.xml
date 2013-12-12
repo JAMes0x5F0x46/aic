@@ -1,0 +1,22 @@
+<soapenv:Envelope xsi:schemaLocation="http://schemas.xmlsoap.org/soap/envelope/ http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aic="aicTypes">
+  <soapenv:Body>
+    <aic:TermListResponse>
+      <!--1 or more repetitions:-->
+      <aic:Term>
+        <aic:text>google</aic:text>
+        <aic:confidence>2.5</aic:confidence>
+        <aic:sentiment>good</aic:sentiment>
+      </aic:Term>
+      <aic:Term>
+        <aic:text>bing</aic:text>
+        <aic:confidence>0.5</aic:confidence>
+        <aic:sentiment>negative</aic:sentiment>
+      </aic:Term>
+      <aic:Term>
+        <aic:text>yahoo</aic:text>
+        <aic:confidence>5.2545</aic:confidence>
+        <aic:sentiment>positive</aic:sentiment>
+      </aic:Term>
+    </aic:TermListResponse>
+  </soapenv:Body>
+</soapenv:Envelope>

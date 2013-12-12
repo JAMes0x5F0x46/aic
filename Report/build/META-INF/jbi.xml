@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jbi xmlns="http://java.sun.com/xml/ns/jbi" xmlns:ns0="http://enterprise.netbeans.org/bpel/Report/Process" xmlns:ns1="http://j2ee.netbeans.org/wsdl/newWSDL" xmlns:ns2="ReportService" xmlns:ns3="http://ws.pdf/" xmlns:ns4="AnalysisService" xmlns:ns5="http://www.sun.com/jbi/descriptor/service-unit" version="1.0">
+    <services binding-component="false">
+        <provides endpoint-name="newWSDLPortTypeRole_myRole" interface-name="ns1:newWSDLPortType" service-name="ns0:PartnerLink4">
+            <ns5:display-name>PartnerLink4</ns5:display-name>
+            <ns5:process-name>Process</ns5:process-name>
+            <ns5:file-path>Process.bpel</ns5:file-path>
+        </provides>
+        <consumes endpoint-name="ReportServiceRole_partnerRole" interface-name="ns2:ReportServicePortType" service-name="ns0:PartnerLink2">
+            <ns5:display-name>PartnerLink2</ns5:display-name>
+            <ns5:process-name>Process</ns5:process-name>
+            <ns5:file-path>Process.bpel</ns5:file-path>
+        </consumes>
+        <consumes endpoint-name="Convert2PDFRole_partnerRole" interface-name="ns3:Convert2PDF" service-name="ns0:PartnerLink5">
+            <ns5:display-name>PartnerLink5</ns5:display-name>
+            <ns5:process-name>Process</ns5:process-name>
+            <ns5:file-path>Process.bpel</ns5:file-path>
+        </consumes>
+        <consumes endpoint-name="AnalysisServiceRole_partnerRole" interface-name="ns4:AnalysisServicePortType" service-name="ns0:PartnerLink3">
+            <ns5:display-name>PartnerLink3</ns5:display-name>
+            <ns5:process-name>Process</ns5:process-name>
+            <ns5:file-path>Process.bpel</ns5:file-path>
+        </consumes>
+    </services>
+</jbi>
